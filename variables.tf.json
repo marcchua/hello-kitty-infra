@@ -1,0 +1,39 @@
+{
+  "variable": {
+    "bucket_name": [
+      {
+        "default": "",
+        "description": "The name of the s3 bucket",
+        "type": "string",
+        "nullable": false,
+        "sensitive": false
+      }
+    ],
+    "create_function_url": [
+      {
+        "default": false,
+        "description": "Whether to create a URL for the Lambda Function.",
+        "type": "bool",
+        "nullable": true,
+        "sensitive": false
+      }
+    ],
+    "environment_variables": [
+      {
+        "default": {},
+        "description": "A map that defines environment variables for the Lambda Function.",
+        "type": "map(string)",
+        "nullable": true,
+        "sensitive": false
+      }
+    ],
+    "filename": [
+      {
+        "description": "The path to the function's deployment package(zip) within the local filesystem",
+        "type": "string",
+        "nullable": true,
+        "sensitive": false
+      }
+    ]
+  }
+}
